@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val myDataset = Datasource().loadAffirmations()
         // Store instance of recyclerview from XML layout
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
-        
+
         // Point recyclerview to adapter, passing context and data list
         recyclerView.adapter = ItemAdapter(this, myDataset)
         // Set fixed size to improve performance
